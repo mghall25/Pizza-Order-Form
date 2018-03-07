@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Pizza | Order Form</title> 
+		
+		<!-- Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+		 
+		 <!-- link to Bootstrap CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel="stylesheet" href="./css/style.css">
+		<!-- link to jQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		
+	</head>
+	
+	<body>
+	<!-- order form -->
+	<div class="wrapper">
+		<div class="jumbotron">
+			<h1>Create Your Pizza</h1>
+		</div>
+		<div class="wrapper">
+			<div class="pizza-size container">
+				<h4 class=ml-1" id="pizza-size-header">Size</h4>
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-3 text-center border-right">
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="selectedSize" id="sizePers" value="0">
+								<label class="form-check-label" for="sizePers">Personal</label>
+							</div>
+							<h6>$6.00</h6>
+							<h8>6-inch pizza</h8>
+						</div>
+						<div class="col-sm-3 text-center border-right">
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="selectedSize" id="sizeM" value="1">
+								<label class="form-check-label" for="sizeM">Medium</label>
+							</div>
+							<h6>$10.00</h6>
+							<h6>10-inch pizza</h6>
+						</div>
+						<div class="col-sm-3 text-center border-right">
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="selectedSize" id="sizeL" value="2">
+								<label class="form-check-label" for="sizeL">Large</label>
+							</div>
+							<h6>$14.00</h6>
+							<h6>14-inch pizza</h6>
+						</div>
+						<div class="col-sm-3 text-center">
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="selectedSize" id="sizeXL" value="3">
+								<label class="form-check-label" for="sizeXL">X-Large</label>
+							</div>
+							<h6>$16.00</h6>
+							<h6>16-inch pizza</h6>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="accordion">
+				<div class="card">
+					<div class="card-header" id="headingOne">
+						<h5 class="mb-0">
+						<button id="crustBtn" class="btn btn-block card-button collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+							Crust
+						</button>
+						</h5>
+					</div>
+					<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+						<div class="card-body">
+							<div class="container">
+								<div class="row">
+									<div class="col-sm-6 border">
+										<div class="form-check">
+											<input class="form-check-input" type="radio" name="selectedCrust" id="crustChoice1" value="0">
+											<label class="form-check-label" for="crustChoice1">Plain Crust</label>
+										</div>
+									</div>
+									<div class="col-sm-6 border">
+										<div class="form-check">
+											<input class="form-check-input" type="radio" name="selectedCrust" id="crustChoice2" value="1">
+											<label class="form-check-label" for="crustChoice2">Garlic Butter Crust</label>
+										</div>
+									</div>
+									<div class="col-sm-6 border">
+										<div class="form-check">
+											<input class="form-check-input" type="radio" name="selectedCrust" id="crustChoice3" value="2">
+											<label class="form-check-label" for="crustChoice3">Cheese-Stuffed Crust (+$3)</label>
+										</div>
+									</div>
+									<div class="col-sm-6 border">
+										<div class="form-check">
+											<input class="form-check-input" type="radio" name="selectedCrust" id="crustChoice4" value="3">
+											<label class="form-check-label" for="crustChoice4">Spicy Crust</label>
+										</div>
+									</div>
+									<div class="col-sm-6 border">
+										<div class="form-check">
+											<input class="form-check-input" type="radio" name="selectedCrust" id="crustChoice5" value="4">
+											<label class="form-check-label" for="crustChoice5">House Special Crust</label>
+										</div>
+									</div>
+								</div>		
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-header" id="headingTwo">
+						<h5 class="mb-0">
+							<button id="sauceBtn" class="btn btn-block card-button collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+							Sauces
+							</button>
+						</h5>
+					</div>
+					<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+						<div class="card-body">
+							<div class="container">
+								<div class="row">
+									<div class="col-sm-6 border">
+										<div class="form-check">
+											<input class="form-check-input" type="radio" name="selectedSauce" id="sauceCoice1" value="0">
+											<label class="form-check-label" for="sauceCoice1">Marinara Sauce</label>
+										</div>
+									</div>
+									<div class="col-sm-6 border">
+										<div class="form-check">
+											<input class="form-check-input" type="radio" name="selectedSauce" id="sauceCoice2" value="1">
+											<label class="form-check-label" for="sauceCoice2">White Sauce</label>
+										</div>
+									</div>
+									<div class="col-sm-6 border">
+										<div class="form-check">
+											<input class="form-check-input" type="radio" name="selectedSauce" id="sauceCoice3" value="2">
+											<label class="form-check-label" for="sauceCoice3">Barbecue Sauce</label>
+										</div>
+									</div>
+									<div class="col-sm-6 border">
+										<div class="form-check">
+											<input class="form-check-input" type="radio" name="selectedSauce" id="sauceCoice4" value="3">
+											<label class="form-check-label" for="sauceCoice4">No Sauce</label>
+										</div>
+									</div>
+								</div>		
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-header" id="headingThree">
+						<h5 class="mb-0">
+						<button id="cheeseBtn" class="btn btn-block card-button collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+							Cheese
+						</button>
+						</h5>
+					</div>
+					<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+						<div class="card-body">
+							<div class="container">
+								<div class="row">
+									<div class="col-sm-6 border">
+										<div class="form-check">
+											<input class="form-check-input" type="radio" name="selectedCheese" id="cheeseChoice1" value="0">
+											<label class="form-check-label" for="cheeseChoice1">Regular Cheese</label>
+										</div>
+									</div>
+									<div class="col-sm-6 border">
+										<div class="form-check">
+											<input class="form-check-input" type="radio" name="selectedCheese" id="cheeseChoice2" value="1">
+											<label class="form-check-label" for="cheeseChoice2">Extra Cheese (+$3)</label>
+										</div>
+									</div>
+									<div class="col-sm-6 border">
+										<div class="form-check">
+											<input class="form-check-input" type="radio" name="selectedCheese" id="cheeseChoice3" value="2">
+											<label class="form-check-label" for="cheeseChoice3">No Cheese</label>
+										</div>
+									</div>
+								</div>
+							</div>		
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-header" id="headingFour">
+						<h5 class="mb-0">
+							<button id="meatBtn" class="btn btn-block card-button collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+							Meats
+							</button>
+						</h5>
+					</div>
+					<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+						<div class="card-body">
+							<div class="card-body">
+								<div class="container">
+									<div class="row" id="meatSelection">
+										<div class="col-sm-6 border">
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" value="0" id="meatChoice1">
+												<label class="form-check-label" for="meatChoice1">
+													Pepperoni
+												</label>
+											</div>
+										</div>
+										<div class="col-sm-6 border">
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" value="1" id="meatChoice2">
+												<label class="form-check-label" for="meatChoice2">
+													Sausage
+												</label>
+											</div>
+										</div>
+										<div class="col-sm-6 border">
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" value="2" id="meatChoice3">
+												<label class="form-check-label" for="meatChoice3">
+													Canadian Bacon
+												</label>
+											</div>
+										</div>
+										<div class="col-sm-6 border">
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" value="3" id="meatChoice4">
+												<label class="form-check-label" for="meatChoice4">
+													Ground Beef
+												</label>
+											</div>
+										</div>
+										<div class="col-sm-6 border">
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" value="4" id="meatChoice5">
+												<label class="form-check-label" for="meatChoice5">
+													Anchovy
+												</label>
+											</div>
+										</div>
+										<div class="col-sm-6 border">
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" value="5" id="meatChoice6">
+												<label class="form-check-label" for="meatChoice6">
+													Chicken
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>		
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-header" id="headingFive">
+						<h5 class="mb-0">
+						<button id="veggieBtn" class="btn btn-block card-button collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+							Veggies
+						</button>
+						</h5>
+					</div>
+					<div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+						<div class="card-body">
+							<div class="container">
+								<div class="row" id="veggieSelection">
+									<div class="col-sm-6 border">
+										<div class="form-check">
+											<input class="form-check-input" type="checkbox" value="0" id="veggieChoice1">
+											<label class="form-check-label" for="veggieChoice1">
+												Tomatoes
+											</label>
+										</div>
+									</div>
+									<div class="col-sm-6 border">
+										<div class="form-check">
+											<input class="form-check-input" type="checkbox" value="1" id="veggieChoice2">
+											<label class="form-check-label" for="veggieChoice2">
+												Onions
+											</label>
+										</div>
+									</div>
+									<div class="col-sm-6 border">
+										<div class="form-check">
+											<input class="form-check-input" type="checkbox" value="2" id="veggieChoice3">
+											<label class="form-check-label" for="veggieChoice3">
+												Olives
+											</label>
+										</div>
+									</div>
+									<div class="col-sm-6 border">
+										<div class="form-check">
+											<input class="form-check-input" type="checkbox" value="3" id="veggieChoice4">
+											<label class="form-check-label" for="veggieChoice4">
+												Green Peppers
+											</label>
+										</div>
+									</div>
+									<div class="col-sm-6 border">
+										<div class="form-check">
+											<input class="form-check-input" type="checkbox" value="4" id="veggieChoice5">
+											<label class="form-check-label" for="veggieChoice5">
+												Mushrooms
+											</label>
+										</div>
+									</div>
+									<div class="col-sm-6 border">
+										<div class="form-check">
+											<input class="form-check-input" type="checkbox" value="5" id="veggieChoice6">
+											<label class="form-check-label" for="veggieChoice6">
+												Pineapple
+											</label>
+										</div>
+									</div>
+									<div class="col-sm-6 border">
+										<div class="form-check">
+											<input class="form-check-input" type="checkbox" value="6" id="veggieChoice7">
+											<label class="form-check-label" for="veggieChoice7">
+												Spinach
+											</label>
+										</div>
+									</div>
+									<div class="col-sm-6 border">
+										<div class="form-check">
+											<input class="form-check-input" type="checkbox" value="7" id="veggieChoice8">
+											<label class="form-check-label" for="veggieChoice8">
+												Jalepeno
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>	
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<!-- error messages -->
+			<div class="alert alert-danger" id="orderErrorMsg" role="alert">
+				<p></p>
+			</div>
+			
+			<!-- submit button -->
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+					</div>
+					<div class="col-md-4">
+						<button type="submit" class="btn btn-primary btn-lg" id="calcBtn" value="Submit">Calculate Your Order</button>
+					</div>
+					<div class="col-md-4">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- order total -->
+	<div class="wrapper order-total">
+		<!-- Modal -->
+		<div class="modal fade" id="orderTotalModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title text-center" id="exampleModalLongTitle">Your Order</h4>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="row">
+							<div class="itemName"></div><div class="itemPrice"></div>
+						</div>
+						<div class="row">
+							<div class="itemName"></div><div class="itemPrice"></div>
+						</div>
+						<div class="row">
+							<div class="itemName"></div><div class="itemPrice"></div>
+						</div>
+						<div class="row">
+							<div class="itemName"></div><div class="itemPrice"></div>
+						</div>
+						<div class="row">
+							<div class="itemName"></div><div class="itemPrice"></div>
+						</div>
+						<div class="row">
+							<div class="itemName"></div><div class="itemPrice"></div>
+						</div>
+						<div class="row border-top">
+							<div class="totalName text-right">Total</div><div id="totalPrice"></div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+		
+	<!-- Bootstrap JS links -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	
+	<!-- include JavaScript file -->
+	<script src="./js/order.js"></script>		
+	
+	</body>
+</html>

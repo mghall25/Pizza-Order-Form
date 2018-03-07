@@ -1,0 +1,145 @@
+html {
+	margin:0;
+	padding:0;
+	height:100%	
+}
+
+body {
+	background-image: url("../img/pizzabright.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: bottom right;	
+	font-family: 'Lato', Arial, sans-serif !important;
+	color: #231f20;
+	/* for older browsers */
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;	
+}
+
+.wrapper {
+	max-width: 900px;
+	width: 90%;
+	opacity: 1;
+	background: #f8f8f6;
+	margin: 5% auto;
+}
+
+.wrapper .wrapper {
+	margin: 2% 5%;
+}
+
+.jumbotron {
+	background: #efefef;
+	height: 6em;
+	border-bottom: 1px solid #bbb;
+	padding-top: 2em;
+	padding-bottom: 5em;
+}
+
+h1 {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 900;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+/* pizza-size section */
+.pizza-size {
+	margin-bottom: 1em;
+}
+
+.pizza-size .form-check-label {
+	font-weight: 800;
+}
+
+/* restyle cards and the card buttons on top */
+.card {
+	margin-bottom: .5em;	
+}
+
+.card-header {
+	background: #605954;
+	color: #fff;	
+	padding: .6em;
+}
+
+.card-body {
+	padding: 0;
+}
+
+.card-button, .card-button:focus, .card-button:active {
+	background: #605954;
+	color: #fff;
+	text-align: left;
+	font-weight: 800;
+	box-shadow: none;
+}
+
+.card-body .form-check {
+	padding: 1rem 1.5rem;
+}
+
+.card-body .form-check-label {
+	color: #605954;
+	padding-left: 5px;
+}
+
+/* restyle action buttons */
+.btn-primary {
+    color: #fff;
+    background-color: #c4122f;
+    border-color: #c4122f;
+	border-radius: 0;
+	margin: 1em auto;
+	box-shadow: 0;
+}
+
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+	background-color: #8B0E04;
+	border-color: #8B0E04;
+	box-shadow: none;
+}
+
+@media (max-width: 700px) {
+	#calcBtn {
+		width: 100%;
+	}
+}
+
+/* default error message to hidden */
+#orderErrorMsg {
+	display: none;
+}
+
+/* order total modal */
+.modal-body {
+	margin: 5%;
+}
+
+.itemName, .totalName {
+	width:  75%;
+	float: left;
+	padding: 1%;
+}
+
+.itemPrice, #totalPrice  {
+	width: 22%;
+	float: right;
+	text-align: right;
+	margin: auto 1%;	
+}
+
+.totalName, #totalPrice {
+	font-size:1.5rem;
+}
