@@ -1,4 +1,4 @@
 # Pizza-Order-Form
-Pizza Order Form - HTML, CSS, Bootstrap, Javascript, jQuery
+A project using HTML, CSS, Bootstrap, Javascript, jQuery
 
-Interactive webpage using Bootstrap and Javascript
+This is an interactive webpage built using HTML/CSS, Bootstrap, and Javascript/jQuery, styled similar to the Mod Pizza "Create Your Own Pizza" page.
